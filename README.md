@@ -31,9 +31,9 @@ Sir, enemy ships in Sector 47!
 
 IT'S A TRAP!
 
-![this looks like a trap](https://tenor.com/bgon9.gif)
+![it looks like a trap](https://media.giphy.com/media/EunA0OnsyTU1W/giphy.gif)
 
-![ISA TRAP!](https://tenor.com/view/its-atrap-trap-admiral-akbar-star-wars-we-are-trapped-gif-9276476)
+![IT'S A TRAP!](https://media.giphy.com/media/8McNH1aXZnVyE/giphy.gif)
 
 
 ## If the DevMtn instructors were pirates
