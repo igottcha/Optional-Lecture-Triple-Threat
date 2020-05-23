@@ -21,6 +21,8 @@ But mute if you're not
 
 ![right](https://media.giphy.com/media/eKsitqEE3cz2iV6uNt/giphy.gif)
 
+^ don't worry about web links or meme links, I will share this presentation on github
+
 ---
 
 # whoami
@@ -53,7 +55,7 @@ But mute if you're not
 
 ---
 
-## project.pbxproj
+# group
 
 ![fit](https://miro.medium.com/max/1000/0*L8V0he9CqczlGIhu.jpg)
 
@@ -65,7 +67,7 @@ But mute if you're not
 
 ![fit](images/github_wont_help_with_merge_conflict.png)
 
-^ GitHub won't merge every conflict. We have no choice but to resolve it command line.
+^ GitHub won't merge every conflict. We have no choice but to resolve it locally in command line.
 
 ---
 
@@ -227,6 +229,10 @@ Where is this? Show contents of your .xcodeproj
 
 Check out colors in the [Official git documentation](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)
 
+---
+
+# *Questions?*
+
 
 ---
 
@@ -260,6 +266,11 @@ Check out colors in the [Official git documentation](https://git-scm.com/book/en
 [UML Diagrams](https://stackedit.io)
 
 [Writers? Authors? Write in Markdown. Version Control in git.](https://opensource.com/article/19/4/write-git)
+
+---
+
+# *Questions?*
+
 
 ---
 
@@ -311,8 +322,9 @@ Check out colors in the [Official git documentation](https://git-scm.com/book/en
 * freedom to pull/merge what makes sense
 
 ---
+![right, 100%](https://external-preview.redd.it/zq1s4Z9dp1CJUyTsfZNnV5G8quW5xCM7W1RxXttjaiw.jpg?auto=webp&s=ab7d13c06b9f5bfec1943549177f424b54366374)
 
-## The hard stuff first
+# The hard stuff first
 
 ---
 
@@ -368,20 +380,63 @@ Check out colors in the [Official git documentation](https://git-scm.com/book/en
 
 ---
 
+
+
 ## NEVER: Push to master
 ## YES: Pull request from branch to master
 
-![left, fit](https://external-preview.redd.it/zq1s4Z9dp1CJUyTsfZNnV5G8quW5xCM7W1RxXttjaiw.jpg?auto=webp&s=ab7d13c06b9f5bfec1943549177f424b54366374)
+![left, 100%](https://img.devrant.com/devrant/rant/r_1320842_Y3UMP.jpg)
 
-^ Github is the best place to pull request from a feature branch to master.
+
+
+^ Github is the easiest place to pull request from a feature branch to master.
 
 ^ My Ruby instructor told me to PR, which is an initialism for Pull Request.
 
 ---
 
+
+## Keep your local stable/clean branch updated daily
+
+Or after every PR
+
+```
+git pull origin develop
+```
+
+
+---
+
+## Best practice: merge on your local with the latest stable branch before you PR
+
+```
+// on feature branch
+git checkout -b attempt-to-merge-develop-with-feature
+git merge develop
+```
+
+^ as you get the hang of merging PRs on GitHub, try to merge on your local machine.
+
+---
+
+## Everyone in the team can contribute to an open PR
+
+* Even after the author submitted the PR!
+* Just push additional commits to the same branch
+* Use this opportunity to fix or patch the PR so it can merge more smoothly
+
+---
+
 # git a git plan
 
-[https://gist.github.com/theevo/2a53ffe0553443d572fbb1c036c7eb07](https://gist.github.com/theevo/2a53ffe0553443d572fbb1c036c7eb07)
+* what to name the clean/stable branch? `develop`?
+* what should we name our feature branches?
+* should we have a review process for PRs?
+* resolve conflicts together?
+
+---
+
+[my group's SOP](https://gist.github.com/theevo/2a53ffe0553443d572fbb1c036c7eb07)
 
 ---
 
@@ -398,6 +453,49 @@ git status
 git pull origin develop
 git log
 ```
+
+---
+
+![fit](images/git_status_after_add.png)
+
+^ great example of git status after add
+^ it looks at first that git is going to delete my README
+^ after add, it's clear that the README just moved
+
+---
+
+# `commit vs. push`
+
+---
+
+![](https://img.devrant.com/devrant/rant/r_108183_LoYWP.jpg)
+
+^ in case of predator attack, git commit, git push, git to da choppa
+
+---
+
+## Push daily to your own branch
+
+Push your work even if it's not quite presentable. If it's progress, push it.
+
+Push your work to github in case your computer decides to die in the middle of group projects.
+
+^ it's safe because you're not committing to your stable/clean branch
+
+---
+
+# Nitpicky Stuff about Commits
+
+Aim for consistency between your actual coding and commit messages.
+
+* Before you start coding, ask yourself, "What am I going to do next?"
+* The answer should be consistent with what you write in your code.
+* And the same answer should by typed into your commit message.
+* If you're housekeeping, then say you're housekeeping. Do not package housekeeping as an "Easter egg" feature of "Fix view controller"
+
+---
+
+https://github.com/coronacation/MVP/pull/83
 
 ---
 
@@ -448,12 +546,6 @@ git log
 
 ---
 
-## Forgot what HEAD is?
-
-## `git log`
-
----
-
 ## Abort Merge
 
 ## `git merge --abort`
@@ -477,6 +569,7 @@ https://github.com/theevo/gitnotes
 [learn.co - super thorough](https://learn.co/lessons/git-basics-lab)
 
 ---
+
 
 
 ![fit](https://www.azquotes.com/picture-quotes/quote-happiness-real-only-when-shared-christopher-mccandless-113-70-88.jpg)
