@@ -23,13 +23,13 @@ But mute if you're not
 
 ---
 
-# `whoami`
+# whoami
 
 ![right, fit](https://vignette.wikia.nocookie.net/kenshin/images/1/1f/Okina1.jpg)
 
-## Theo Vora
-## @theevo
-## in/theovora
+# `Theo Vora`
+# `@theevo`
+# `in/theovora`
 
 ---
 
@@ -53,9 +53,19 @@ But mute if you're not
 
 ---
 
+## project.pbxproj
+
+![fit](https://miro.medium.com/max/1000/0*L8V0he9CqczlGIhu.jpg)
+
+^ Winter isn't coming. merge conflicts are coming.
+
+^ If you work in a team, you will have conflicts. It's inevitable.
+
+---
+
 ![fit](images/github_wont_help_with_merge_conflict.png)
 
-^ GitHub won't merge this. We have no choice but to resolve it command line.
+^ GitHub won't merge every conflict. We have no choice but to resolve it command line.
 
 ---
 
@@ -63,9 +73,7 @@ But mute if you're not
 
 -- [Jason McCreary](https://jasonmccreary.me/articles/git-command-line-vs-gui/)
 
----
-
-> If you don't know what the GUI is doing, how can you know what happening to your code?
+^ If you don't know what the GUI is doing, how can you know what happening to your code?
 
 ---
 
@@ -188,17 +196,22 @@ Where is this? Show contents of your .xcodeproj
 
 ---
 
+# Your Turn
+
+---
+
+# Fork + Clone
+
+### [https://github.com/theevo/Optional-Lecture-Triple-Threat](https://github.com/theevo/Optional-Lecture-Triple-Threat)
+
+---
+
 ## Your turn
 
 # 1. Terminal
 
 ---
 
-# Fork me
-
-### [https://github.com/theevo/Optional-Lecture-Triple-Threat](https://github.com/theevo/Optional-Lecture-Triple-Threat)
-
----
 
 # Where to gitignore from here?
 
@@ -216,53 +229,6 @@ Check out colors in the [Official git documentation](https://git-scm.com/book/en
 
 
 ---
-
-# You know this
-
-![right](https://i5.walmartimages.com/asr/ead0cea5-113a-4c4e-af6d-4101bc6ccb8f_1.994c1b56c847c97ad9bde09904c3391d.jpeg)
-
-1. On GitHub, Fork
-2. `git clone <url>`
-
----
-
-# clone vs branch?
-
----
-
-# Hustle & Push
-
-```
-git add .
-git commit -m "Fix bugs"
-git push origin develop
-```
-
----
-
-# 
-
-
-Level 1. Oh my zsh
-Level 2. Dracula
-Level 3. Pimp my Term
-
-
----
-
-
-# Defense Against the Dark Arts it is!
-
-![left, 80%](https://pics.me.me/they-jinxed-defence-against-the-dark-arts-professors-https-t-co-s1vr8x0u1x-27254381.png)
-
-
----
-
-commands
-
-
----
-
 
 # Markdown
 
@@ -293,6 +259,7 @@ commands
 
 [UML Diagrams](https://stackedit.io)
 
+[Writers? Authors? Write in Markdown. Version Control in git.](https://opensource.com/article/19/4/write-git)
 
 ---
 
@@ -301,8 +268,8 @@ commands
 
 ![right, fit](https://imgs.xkcd.com/comics/git.png)
 
-
 ---
+
 
 ## Quick, quick history
 
@@ -339,16 +306,16 @@ commands
 # git themes
 
 * distributed, not centralized
+* freedom to go off the centralized server
 * freedom to branch (and experiment)
 * freedom to pull/merge what makes sense
 
 ---
 
-# practice
-
-## git x Markdown
+## The hard stuff first
 
 ---
+
 
 ![fit](https://media1.tenor.com/images/d3972747d472654b151a8744671d7709/tenor.gif?itemid=5750749) 
 
@@ -360,7 +327,40 @@ commands
 
 ---
 
-2. Markdown
+![fit](images/merge_football_play.png)
+
+---
+
+# practice
+
+## git x Markdown
+
+---
+
+# *Demo*
+
+^ Theo: demonstrate how to create a merge conflict
+
+---
+
+## Your Turn
+# 2. Markdown
+### /AllTheThings.md
+
+---
+> /2. Markdown/AllTheThings.md
+
+1. checkout new branch named `develop`
+2. Make a change to a line in the doc
+3. add + commit
+4. checkout master
+5. Make a different change to the same line in #2
+6. add + commit
+7. merge develop
+
+---
+
+### merges aren't that scary anymore, amirite?
 
 ---
 
@@ -368,7 +368,7 @@ commands
 
 ---
 
-## NO: Push to master
+## NEVER: Push to master
 ## YES: Pull request from branch to master
 
 ![left, fit](https://external-preview.redd.it/zq1s4Z9dp1CJUyTsfZNnV5G8quW5xCM7W1RxXttjaiw.jpg?auto=webp&s=ab7d13c06b9f5bfec1943549177f424b54366374)
@@ -405,15 +405,13 @@ git log
 
 ![fit](https://miro.medium.com/max/1000/0*L8V0he9CqczlGIhu.jpg)
 
-^ Winter isn't coming. merge conflicts are coming.
+^ pbxproj will conflict a lot, naturally.
 
 ---
 
-# Everything in Xcode is a file
+![fit](images/pbxproj_conflict.png)
 
-- storyboard = XML
-- Info.plist = XML
-- YourProject.xcodeproj/project.pbxproj = JSON? def text
+^ what pbxproj conflict looks like
 
 ---
 
@@ -427,28 +425,38 @@ git log
 
 ![inline](https://codewithchris-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/xcode-file-navigator-pane.png)
 
-* builds your Project Explorer
+* builds your Project Navigator
 * every file/group add, move, delete
+
+> git will track!
+
+---
+
+# Everything in Xcode is text
+
+- storyboard = XML
+- Info.plist = XML
+- YourProject.xcodeproj/project.pbxproj = JSON? def text
+
+> git will track these!
 
 ---
 
 # Read what git is telling you
 
-Google until life makes sense
+### Google until life makes sense
 
 ---
 
-# Abort
+## Forgot what HEAD is?
 
-```
-git merge --abort
-```
+## `git log`
 
 ---
 
-![fit](https://www.azquotes.com/picture-quotes/quote-happiness-real-only-when-shared-christopher-mccandless-113-70-88.jpg)
+## Abort Merge
 
-^ Happiness is only real when shared.
+## `git merge --abort`
 
 ---
 
@@ -470,9 +478,18 @@ https://github.com/theevo/gitnotes
 
 ---
 
-# aspiring writers & authors?
 
-![fit](https://opensource.com/sites/default/files/uploads/atom-preview.jpg)
+![fit](https://www.azquotes.com/picture-quotes/quote-happiness-real-only-when-shared-christopher-mccandless-113-70-88.jpg)
 
-[Write in Markdown. Version Control in git.](https://opensource.com/article/19/4/write-git)
+^ Happiness is only real when shared.
 
+---
+
+```
+	// made with <3 for DevMtn
+	
+	// in/theovora
+	// github.com/theevo
+```
+
+^ iOS33, hit me up on LinkedIn! ;)

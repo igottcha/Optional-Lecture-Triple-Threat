@@ -1,4 +1,4 @@
-I'm giving git notes away.
+I'm giving my personal git notes away.
 
 Fork it.
 
@@ -6,6 +6,6 @@ Improve it.
 
 Make it your own.
 
-Enjoy.
+Build wonderful things.
 
 https://github.com/theevo/gitnotes
