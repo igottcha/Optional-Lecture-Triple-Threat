@@ -81,7 +81,7 @@ Google powerlevel9k and be in awe
 
 ### 1. Copy a trusted person's .gitignore
 
-[Theo's gitignore](https://gist.github.com/theevo/09bcdd508f9d65edfda637487143a877)
+[Theo's gitignore]( )
 
 [If you don't trust me, at least trust GitHub.](https://github.com/github/gitignore/blob/master/Swift.gitignore)
 
